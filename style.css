@@ -127,10 +127,10 @@ nav {
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
-  color: #6C4675;
+  color: cornflowerblue;
 }
 .sliderItem:nth-child(2) .sliderPrice {
-  color: rebeccapurple;
+  color: #6C4675;
 }
 
 .features {
@@ -166,7 +166,7 @@ nav {
 
 .product {
   height: 100vh;
-  background-color: whitesmoke;
+  background-color: wheat;
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -402,6 +402,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .fInput {
