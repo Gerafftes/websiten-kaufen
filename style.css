@@ -120,14 +120,14 @@ nav {
 }
 
 .sliderItem:nth-child(1) .sliderBg {
-  background-color: #EC8058;
+  background-color: rebeccapurple;
 }
 .sliderItem:nth-child(2) .sliderBg {
   background-color: rebeccapurple;
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
-  color: #EC8058;
+  color: rebeccapurple;
 }
 .sliderItem:nth-child(2) .sliderPrice {
   color: rebeccapurple;
