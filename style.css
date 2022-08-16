@@ -123,11 +123,11 @@ nav {
   background-color: cornflowerblue;
 }
 .sliderItem:nth-child(2) .sliderBg {
-  background-color: rebeccapurple;
+  background-color: #6C4675;
 }
 
 .sliderItem:nth-child(1) .sliderPrice {
-  color: cornflowerblue;
+  color: #6C4675;
 }
 .sliderItem:nth-child(2) .sliderPrice {
   color: rebeccapurple;
