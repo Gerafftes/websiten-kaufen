@@ -6,18 +6,18 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "NORMAL WEBSITE",
+    title: "NORMAL WEBSEITE",
     price: 60,
     colors: [
       {
         code: "black",
-        img: "img/normalewebsite.png",
+        img: "img/normalewebseite.png",
       },
     ],
   },
   {
     id: 2,
-    title: "WEBSITE MIT SHOP",
+    title: "WEBSEITE MIT SHOP",
     price: 60,
     colors: [
       {
