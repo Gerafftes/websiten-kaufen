@@ -15,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>WEBSEITEN-KAUFEN</title>
+    <title>WEBSIETEN-KAUFEN</title>
 </head>
 
 <body>
@@ -74,54 +74,54 @@
             <h1 class="productTitle">NORMALE WEBSITEN</h1>
             <h2 class="productPrice">60€</h2>
             <p class="productDesc">Für Ihre professionelle und individuelle Website schicken sie mir bitte eine Skizze oder eine Notiz, wie die Website aussehen soll per Mail.
-              <br>  Mail: johann.eugen@icloud.com</p>
+                Mail: johann.eugen@icloud.com</p>
                 <br>
-               <div id="smart-button-container">
-      <div style="text-align: center;">
-        <div id="paypal-button-container"></div>
-      </div>
-    </div>
-  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
-  <script>
-    function initPayPalButton() {
-      paypal.Buttons({
-        style: {
-          shape: 'pill',
-          color: 'gold',
-          layout: 'horizontal',
-          label: 'pay',
-          tagline: true
-        },
-
-        createOrder: function(data, actions) {
-          return actions.order.create({
-            purchase_units: [{"description":"Webseiten coding","amount":{"currency_code":"EUR","value":60}}]
-          });
-        },
-
-        onApprove: function(data, actions) {
-          return actions.order.capture().then(function(orderData) {
-            
-            // Full available details
-            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-
-            // Show a success message within this page, e.g.
-            const element = document.getElementById('paypal-button-container');
-            element.innerHTML = '';
-            element.innerHTML = '<h3>Thank you for your payment!</h3>';
-
-            // Or go to another URL:  actions.redirect('thank_you.html');
-            
-          });
-        },
-
-        onError: function(err) {
-          console.log(err);
-        }
-      }).render('#paypal-button-container');
-    }
-    initPayPalButton();
-  </script>
+                <div id="smart-button-container">
+                    <div style="text-align: center;">
+                      <div id="paypal-button-container"></div>
+                    </div>
+                  </div>
+                <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                <script>
+                  function initPayPalButton() {
+                    paypal.Buttons({
+                      style: {
+                        shape: 'pill',
+                        color: 'gold',
+                        layout: 'horizontal',
+                        label: 'pay',
+                        
+                      },
+              
+                      createOrder: function(data, actions) {
+                        return actions.order.create({
+                          purchase_units: [{"description":"website coding","amount":{"currency_code":"EUR","value":60}}]
+                        });
+                      },
+              
+                      onApprove: function(data, actions) {
+                        return actions.order.capture().then(function(orderData) {
+                          
+                          // Full available details
+                          console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+              
+                          // Show a success message within this page, e.g.
+                          const element = document.getElementById('paypal-button-container');
+                          element.innerHTML = '';
+                          element.innerHTML = '<h3>Thank you for your payment!</h3>';
+              
+                          // Or go to another URL:  actions.redirect('thank_you.html');
+                          
+                        });
+                      },
+              
+                      onError: function(err) {
+                        console.log(err);
+                      }
+                    }).render('#paypal-button-container');
+                  }
+                  initPayPalButton();
+                </script>
         </div>
        
     </div>
@@ -139,7 +139,11 @@
             </div>
         </div>
         <div class="footerRight">
-            
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="img/Bildschirmfoto_2022-08-17_um_14.25.58-removebg-preview.png" alt="" class="fIcon">
+                </div>
             </div>
             <div class="footerRightMenu">
                 <span class="copyright">@Johann Eugen Münzberg. All rights reserved. 2022.</span>
@@ -147,8 +151,6 @@
         </div>
     </footer>
     <script src="./app.js"></script>
- <a href='https://pflegegradantrag.com/'>pflegegradantrag.com</a> <script type='text/javascript' src='https://www.fast-counter.net/auth.php?id=a86fce5da4927a42ef17e3358b94732840d7c3da'></script>
-<script type="text/javascript" src="https://www.fast-counter.net/de/home/counter/961103/t/12"></script>
 </body>
 
 </html>
