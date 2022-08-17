@@ -402,6 +402,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #111;
 
 }
 
@@ -431,7 +432,7 @@ footer {
   color: wheat;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:500px) {
   nav{
     padding: 20px;
   }
@@ -536,7 +537,7 @@ footer {
     padding: 20px;
     width: 90%;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: #111;
   }
 
   .payment{
