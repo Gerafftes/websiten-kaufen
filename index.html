@@ -87,15 +87,15 @@
       paypal.Buttons({
         style: {
           shape: 'pill',
-          color: 'black',
+          color: 'gold',
           layout: 'horizontal',
           label: 'pay',
-          
+          tagline: true
         },
 
         createOrder: function(data, actions) {
           return actions.order.create({
-            purchase_units: [{"description":"Website coding","amount":{"currency_code":"EUR","value":60}}]
+            purchase_units: [{"description":"Webseiten coding","amount":{"currency_code":"EUR","value":60}}]
           });
         },
 
