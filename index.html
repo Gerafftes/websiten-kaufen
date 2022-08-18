@@ -81,68 +81,25 @@
             <button class="productButton">BUY NOW!</button>
         </div>
         <div class="payment">
-            <br><br>
-            <input type="checkbox">
-            <label>NORMALE WEBSEITE:</label>
             <br>
+            <label>Payment:</label>
+            <br>
+            
             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="ECUHLV3XHT4EQ">
-              <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+              <input type="hidden" name="hosted_button_id" value="L5Y6CCG6BFEWJ">
+              <table>
+              <tr><td><input type="hidden" name="on0" value="wähle weise">Wähle aus:</td></tr><tr><td><select name="os0">
+                <option value="normale Webseite">normale Webseite €50,00 EUR</option>
+                <option value="Webseite mit shop">Webseite mit shop €70,00 EUR</option>
+              </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="EUR">
+              <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
               <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
               </form>
               
               
-            <br><br>
-            <input type="checkbox">
-            <label>WEBSEITE MIT SHOP:</label>
-            <br>
-            <div id="smart-button-container">
-              <div style="text-align: center;">
-                <div id="paypal-button-container"></div>
-              </div>
-            </div>
-          <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
-          <script>
-            function initPayPalButton() {
-              paypal.Buttons({
-                style: {
-                  shape: 'pill',
-                  color: 'black',
-                  layout: 'horizontal',
-                  label: 'pay',
-                  
-                },
-        
-                createOrder: function(data, actions) {
-                  return actions.order.create({
-                    purchase_units: [{"description":"Webseiten-kaufen","amount":{"currency_code":"EUR","value":70}}]
-                  });
-                },
-        
-                onApprove: function(data, actions) {
-                  return actions.order.capture().then(function(orderData) {
-                    
-                    // Full available details
-                    console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
-        
-                    // Show a success message within this page, e.g.
-                    const element = document.getElementById('paypal-button-container');
-                    element.innerHTML = '';
-                    element.innerHTML = '<h3>Thank you for your payment!</h3>';
-        
-                    // Or go to another URL:  actions.redirect('thank_you.html');
-                    
-                  });
-                },
-        
-                onError: function(err) {
-                  console.log(err);
-                }
-              }).render('#paypal-button-container');
-            }
-            initPayPalButton();
-          </script>
 
             <span class="close">X</span>
         </div>
