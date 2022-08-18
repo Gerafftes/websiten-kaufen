@@ -6,7 +6,7 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "NORMALE WEBSITE",
+    title: "PURE WEBSITE",
     price: 50,
     colors: [
       {
