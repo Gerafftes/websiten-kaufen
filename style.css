@@ -324,6 +324,7 @@ label {
   color: white;
   font-weight: 600;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .testbutton {
@@ -420,6 +421,7 @@ footer {
 
 .fListItem:hover {
   margin-bottom: 9px;
+  margin-top: 9px;
   color: rgb(187, 185, 185);
   cursor: pointer;
   font-size: 17px;
