@@ -4,21 +4,53 @@
    |____________/
    |_|_|   /_/_/
 -->
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="This is just a very simple modal made with JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="img/logooben.png" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>WEBSEITEN-KAUFEN</title>
 </head>
 
 <body>
+    <!-- Modal container it includes the overlay -->
+    <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+        <!-- Modal content -->
+        <div class="Modal-content">
+            <span id="closeModal" class="Close">&times;</span>
+            
+                <br>
+                <label>Payment:</label>
+                <br><br>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="NLCSKBC98T5U8">
+                    <table>
+                        <tr>
+                            <td><input type="hidden" name="on0" value="Wähle aus:">Wähle aus:</td>
+                        </tr>
+                        <tr>
+                            <td><select name="os0">
+                                    <option value="Pure Webseite">Pure Webseite €100,00 EUR</option>
+                                    <option value="Webseite mit shop">Webseite mit shop €120,00 EUR</option>
+                                </select> </td>
+                        </tr>
+                    </table>
+                    <input type="hidden" name="currency_code" value="EUR">
+                    <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_buynowCC_LG.gif" border="0"
+                        name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                    <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+                </form>
+        </div>
+    </div>
+    <main id="myContainer" class="MainContainer">
     <nav id="nav">
         <div class="navTop">
             <div class="navItem">
@@ -79,35 +111,12 @@
             <p class="productDesc">Wir programmieren ihnen eine 5-seitige professionelle Website nach ihren Vorstellungen und Wünschen. 
               Dazu senden sie uns bitte eine E-Mail mit einer Skizze und einer Notiz, wie die Seite aussehen soll. 
               Mail: johann.eugen@icloud.com</p>
-            <button class="productButton">BUY NOW!</button>
-        </div>
-        <div class="payment">
-            <br>
-            <label>Payment:</label>
-            <br>
+               <!-- Open The Modal -->
+            <button id="myBtn" class="productButton">BUY NOW!</button>
             
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="cmd" value="_s-xclick">
-              <input type="hidden" name="hosted_button_id" value="NLCSKBC98T5U8">
-              <table>
-              <tr><td><input type="hidden" name="on0" value="Wähle aus:">Wähle aus:</td></tr><tr><td><select name="os0">
-                <option value="Pure Webseite">Pure Webseite €100,00 EUR</option>
-                <option value="Webseite mit shop">Webseite mit shop €120,00 EUR</option>
-              </select> </td></tr>
-              </table>
-              <input type="hidden" name="currency_code" value="EUR">
-              <input type="image" src="https://www.paypalobjects.com/de_DE/DE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
-              <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-              </form>
-              
-              
-              
-              
-
-            <span class="close">X</span>
-        </div>
+        </div> 
+        
     </div>
-    
     <footer>
         <div class="footerLeft">
             <div class="footerMenu">
@@ -137,9 +146,12 @@
             </div>
         </div>
     </footer>
+    <script src="js/app.min.js"></script>
     <script src="./app.js"></script>
     <a href='https://pflegegradwiderspruch.com/'>PflegegradWiderspruch.com</a> <script type='text/javascript' src='https://www.fastcounter.net/auth.php?id=27d413c6a5fa9d14d345263d271d404043ecdb50'></script>
 <script type="text/javascript" src="https://www.fastcounter.net/de/home/counter/961273/t/12"></script>
+</main>  
+
 </body>
 
 </html>
