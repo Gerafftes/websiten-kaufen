@@ -7,7 +7,7 @@ const products = [
   {
     id: 1,
     title: "PURE WEBSITE",
-    price: 50,
+    price: 100,
     colors: [
       {
         code: "black",
@@ -18,7 +18,7 @@ const products = [
   {
     id: 2,
     title: "WEBSEITE MIT SHOP",
-    price: 70,
+    price: 120,
     colors: [
       {
         code: "black",
